@@ -19,7 +19,16 @@ struct ForwardGeoScreen: View {
     @State private var lng: Double = 0.0
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack{
+            LinearGradient(gradient: Gradient(colors: [.blue, .cyan]),
+                           startPoint: .topLeading,
+                           endPoint: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
+            
+            
+        }// ZSTACK
+        
     }
 }
 
