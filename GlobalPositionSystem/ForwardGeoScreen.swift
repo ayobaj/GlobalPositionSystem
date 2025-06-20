@@ -54,7 +54,8 @@ struct ForwardGeoScreen: View {
                     
                     // BUTTON
                     Button{
-                        
+                        let inputAddress = "\(tfStreet), \(tfCity), \(tfCountry)"
+                        print(#function, "Trying to obtain the location Coordinates for \(inputAddress)")
                     }label: {
                         Text("Button")
                     }
