@@ -9,14 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        
+        //TAB VIEW - CONTENT VIEW AS MAIN SCREEN
+        TabView{
+            
+            ForwardGeoScreen()
+                .tabItem{
+                    Image(systemName: "mappin.and.ellipse")
+                    Text("Fwd Geo")
+                }
+            
+            ReverseGeoScreen()
+                .tabItem{
+                    Image(systemName: "location.circle.fill")
+                    Text("Rvs Geo")
+                }
+        }// TAB VIEW
     }
+    
 }
 
 #Preview {
