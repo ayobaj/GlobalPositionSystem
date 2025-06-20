@@ -21,11 +21,52 @@ struct ForwardGeoScreen: View {
     var body: some View {
         
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [.blue, .cyan]),
-                           startPoint: .topLeading,
-                           endPoint: .bottomTrailing)
-                .edgesIgnoringSafeArea(.all)
             
+            ContainerRelativeShape()
+                .fill(Color.blue.gradient)
+                .ignoresSafeArea(.all)
+            
+            
+            VStack{
+                
+                Text("Forward Geo Coding")
+                    .foregroundStyle(.white)
+                    .fontWeight(.bold)
+                    .font(.headline)
+                    .padding()
+                
+                Form{
+                    
+                    // TEXT FIELD - STREET
+                    TextField("Enter Street name", text: $tfStreet)
+                        .padding(8)
+                    
+                    // TEXT FIELD - CITY
+                    TextField("Enter Street name", text: $tfCity)
+                        .padding(8)
+                    
+                    // TEXT FIELD - COUNTRY
+                    TextField("Enter Street name", text: $tfCountry)
+                        .padding(8)
+                    
+                    // TEXT - RESULT
+                    Text("RESULT: \(self.result)")
+                    
+                    // BUTTON
+                    Button{
+                        
+                    }label: {
+                        Text("Button")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    
+                    
+                }// FORM
+                .scrollContentBackground(.hidden) // FORM CONFORMATION TO THE ZSTACK
+                .background(Color.clear)
+                
+                
+            }// VSTACK
             
         }// ZSTACK
         
