@@ -6,7 +6,7 @@
 //
 
 import Foundation
-// REQUIRED FOR ACCESS THE LOCATION HELPER
+// REQUIRED TO ACCESS THE LOCATION HELPER
 import CoreLocation
 
 
