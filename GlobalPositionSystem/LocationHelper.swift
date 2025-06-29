@@ -15,7 +15,7 @@ class LocationHelper: ObservableObject{
     // AN OBJECT OF CLGEOCODER CLASS TO PERFORM FORWARD AND REVERSE GEOCDING
     private let geoCoder = CLGeocoder()
     
-    // PROPERTY TO STORE RESULT OF FWD GEOCODING IN STRING TYPE
+    // PROPERTY TO STORE RESULT OF FWD GEOCODING IN CLLOCATION TYPE
     @Published var fwdGeoLocation: CLLocation = CLLocation(latitude: 0.0, longitude: 0.0)
     
     // PROPERTY TO STORE RESULT OF FWD GEOCODING IN STRING TYPE
