@@ -63,8 +63,8 @@ struct ForwardGeoScreen: View {
                     
                     
                 }// FORM
-                .scrollContentBackground(.hidden) // FORM CONFORMATION TO THE ZSTACK
-                .background(Color.clear)
+//                .scrollContentBackground(.hidden) // FORM CONFORMATION TO THE ZSTACK
+//                .background(Color.clear)
                 
                 
             }// VSTACK
